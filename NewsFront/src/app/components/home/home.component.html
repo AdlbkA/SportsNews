@@ -1,0 +1,25 @@
+
+<div class="head" *ngFor="let top of news | slice : 0 : 1">
+    <img [routerLink]="['/news', top.id]" id="newsimage" src="{{top.image}}">
+    <div class="novost">
+        <div class="сategory">
+            <p>{{top.category.name}}</p>
+        </div>
+        <div class="title">
+            <h1 [routerLink]="['/news', top.id]">{{top.title}}</h1>
+        </div>
+        <div class="content">
+            <p>{{top.subtitle}}</p>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div class="main" *ngFor="let val of news">
+        <div class="container">
+            <img [routerLink]="['/news', val.id]" id="bodyimage" src="{{val.image}}" >
+            <h3 [routerLink]="['/news', val.id]" id="bodytitle">{{val.title}}</h3>
+            <p id="bodysubtitle">{{val.subtitle}}</p>
+            <p id="bodycategory">{{val.category.name}}</p>
+        </div>
+    </div>
+</div>

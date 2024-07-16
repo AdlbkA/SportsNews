@@ -1,0 +1,19 @@
+<a [routerLink]="['/']">
+    <h2>SportsNews</h2>
+</a>
+<div class="Categories" *ngFor="let category of categories">
+    <a [routerLink]="['/category', category.id ]">
+        <p>{{category.name}}</p>
+    </a>
+</div>
+<form #searchForm="ngForm" (submit)="onSearch(searchInput.value)">
+    <input type="text" #searchInput="ngModel" name="searchInput" ngModel>
+</form>
+<div class="login">
+    <button [routerLink]="['post/']" class="button-style">Post</button>
+    <button *ngIf="!logged" [routerLink]="['signin/']" class="button-style">Sign in</button>
+    <div id="loggedin" *ngIf="logged">
+        <p>Hello!</p>
+        <button (click)="logout()" class="button-style">Log out</button>
+    </div>
+</div>

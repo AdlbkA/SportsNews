@@ -1,0 +1,22 @@
+.news{
+    width: 50%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    margin: 20px
+}
+
+.text {
+    padding: 5px;
+    margin-inline: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 300px;
+}
+
+#title {
+    font-weight: bold;
+    color: black;
+}

@@ -1,0 +1,11 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" class="login">
+    <label for="">Username</label>
+    <input type="text" ngModel name="username">
+    <label for="">Password</label>
+    <input type="password" ngModel name="password">
+    <div>
+        <button type="submit">Log In</button>
+        <button [routerLink]="['/signup']">Sign Up</button>
+    </div>
+</form>
+

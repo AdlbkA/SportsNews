@@ -1,0 +1,10 @@
+<div class="news" *ngFor="let newss of news">
+    <img src="{{newss.image}}">
+    <div class="text">
+        <a id="title" [routerLink]="['/news', newss.id ]">
+            {{newss.title}}
+        </a>
+        <p>{{newss.subtitle}}</p>
+        <p>{{newss.date}}</p>
+    </div>
+</div>

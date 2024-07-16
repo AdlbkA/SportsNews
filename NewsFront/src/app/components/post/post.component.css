@@ -1,0 +1,33 @@
+.header{
+    margin: 10px;
+}
+
+.constructor {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px;
+}
+
+textarea { 
+    border: 0px ;
+    outline: none;
+    font-size: 20px;
+    margin-block: 10px;
+    resize: none;
+    overflow: hidden;
+}
+
+select {
+    width: 30%;
+}
+
+button {
+    width: 30%;
+    margin-block: 15px;
+    background: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-block: 3px;
+}

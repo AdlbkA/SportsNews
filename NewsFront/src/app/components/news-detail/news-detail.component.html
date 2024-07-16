@@ -1,0 +1,24 @@
+<div class="details">
+    <h1>{{news.title}}</h1>
+    <img src="{{news.image}}">
+    <p>{{news.subtitle}}</p>
+    <p>{{news.content}}</p>
+</div>
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="form-group">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea id="comment" class="form-input" [(ngModel)] = "comment.content" name="comment" required></textarea> </div>
+      <div class="lower-form">
+        <nav>
+          <button class="signup-link">Post</button>
+        </nav>
+      </div>
+    </form>
+</div>
+
+<div *ngFor="let comment of comments">
+  <div class="post-content">
+    <h4>{{ comment.content }}</h4>
+  </div>
+</div>

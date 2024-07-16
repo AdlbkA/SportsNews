@@ -1,0 +1,13 @@
+<div *ngIf="news.length > 0">
+  <div class="container" *ngFor="let article of news">
+    <img src="{{article.image}}" alt="">
+    <div class="text">
+      <h2 id="title" [routerLink]="['/news', article.id ]">{{ article.title }}</h2>
+      <p>{{ article.content }}</p>
+      <p>{{article.date}}</p>
+    </div>
+  </div>
+</div>
+<div *ngIf="news.length === 0">
+  <p>No news found</p>
+</div>

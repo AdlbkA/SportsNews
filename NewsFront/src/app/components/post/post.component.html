@@ -1,0 +1,13 @@
+<div class="header">
+    <h2>News constructor</h2>
+</div>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" class="constructor">
+    <textarea ngModel name="image" type="text" placeholder="Image link"></textarea>
+    <textarea ngModel name="title" type="text" placeholder="Title"></textarea>
+    <textarea ngModel name="subtitle" type="text" placeholder="Subtitle"></textarea>
+    <textarea ngModel name="content" type="text" placeholder="Content"></textarea>
+    <select ngModel name="category">
+        <option *ngFor="let category of categories" [ngValue]="category">{{category.name}}</option>
+    </select>
+    <button type="submit">Post</button>
+</form>

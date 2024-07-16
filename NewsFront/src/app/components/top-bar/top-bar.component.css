@@ -1,0 +1,46 @@
+.Category {
+    margin: 10px;
+}
+
+.logo {
+    margin: 5px;
+    width: 70px;
+}
+
+h2 {
+    margin-inline-start: 5px;
+}
+
+
+p {
+    color: white;
+    margin: 10px;
+}
+
+input {
+    border: 0;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.login {
+    width: 100%;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.button-style { 
+    border: 2px white solid;
+    background-color: transparent;
+    margin: 5px;
+    padding-inline: 10px;
+    padding-block: 4px;
+    border-radius: 5px;
+    color: white;
+}
+
+#loggedin{
+    display: flex;
+}

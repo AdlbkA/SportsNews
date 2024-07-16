@@ -1,0 +1,26 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 3px;
+    outline: none;
+}
+
+button {
+    border-radius: 3px;
+    border: 1px solid;
+    background-color: white;
+    padding-inline: 10px;
+    padding-block: 3px;
+    font-size: 15px;
+    margin-block: 5px;
+}
+
